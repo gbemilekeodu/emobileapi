@@ -1,0 +1,251 @@
+===========
+API Balance
+===============
+
+
+
+
+<?php
+
+$curl = curl_init();
+
+$body = [];
+
+curl_setopt_array($curl, array(
+CURLOPT_URL => "https://emobilesms.com/api/balance.php",
+CURLOPT_RETURNTRANSFER => true,
+CURLOPT_ENCODING => "",
+CURLOPT_MAXREDIRS => 10,
+CURLOPT_TIMEOUT => 0,
+CURLOPT_FOLLOWLOCATION => true,
+CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+CURLOPT_CUSTOMREQUEST => "POST",
+CURLOPT_POSTFIELDS => $body,
+CURLOPT_HTTPHEADER => array(
+        "Content-Type: application/json",
+        "Authorization:  giluye1ukeneqeyece7a6ufiwaxe5ici3a5ute5urajucivuyubidu6arage3u8"
+    ),
+));
+        
+$response = curl_exec($curl);
+
+print_r($response);
+
+
+
+==============
+BUY AIRTIME
+ ================
+
+
+
+  
+<?php
+
+$curl = curl_init();
+    
+$body = json_encode(["network" => "mtn", "amount" => "50", "phoneno" => "08067421633"]);
+
+curl_setopt_array($curl, array(
+CURLOPT_URL => "https://emobilesms.com/api/airtime.php",
+CURLOPT_RETURNTRANSFER => true,
+CURLOPT_ENCODING => "",
+CURLOPT_MAXREDIRS => 10,
+CURLOPT_TIMEOUT => 0,
+CURLOPT_FOLLOWLOCATION => true,
+CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+CURLOPT_CUSTOMREQUEST => "POST",
+CURLOPT_POSTFIELDS => $body,
+CURLOPT_HTTPHEADER => array(
+        "Content-Type: application/json",
+        "Authorization:  giluye1ukeneqeyece7a6ufiwaxe5ici3a5ute5urajucivuyubidu6arage3u8"
+    ),
+));
+        
+$response = curl_exec($curl);
+
+print_r($response);
+
+
+
+=============
+CABLE TV
+=========================
+
+
+
+<?php
+
+$curl = curl_init();
+    
+$body = json_encode(["package" => "smallie", "iuc" => "2029159670"]);
+
+curl_setopt_array($curl, array(
+CURLOPT_URL => "https://emobilesms.com/api/cabletv.php",
+CURLOPT_RETURNTRANSFER => true,
+CURLOPT_ENCODING => "",
+CURLOPT_MAXREDIRS => 10,
+CURLOPT_TIMEOUT => 0,
+CURLOPT_FOLLOWLOCATION => true,
+CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+CURLOPT_CUSTOMREQUEST => "POST",
+CURLOPT_POSTFIELDS => $body,
+CURLOPT_HTTPHEADER => array(
+        "Content-Type: application/json",
+        "Authorization:  giluye1ukeneqeyece7a6ufiwaxe5ici3a5ute5urajucivuyubidu6arage3u8"
+    ),
+));
+        
+$response = curl_exec($curl);
+
+print_r($response);
+
+
+===============
+DATA BUNDLE 
+=================
+
+<?php
+
+$curl = curl_init();
+    
+$body = json_encode(["datasize" => "mtn500", "phoneno" => "08155577122"]);
+
+curl_setopt_array($curl, array(
+CURLOPT_URL => "https://emobilesms.com/api/databundle.php",
+CURLOPT_RETURNTRANSFER => true,
+CURLOPT_ENCODING => "",
+CURLOPT_MAXREDIRS => 10,
+CURLOPT_TIMEOUT => 0,
+CURLOPT_FOLLOWLOCATION => true,
+CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+CURLOPT_CUSTOMREQUEST => "POST",
+CURLOPT_POSTFIELDS => $body,
+CURLOPT_HTTPHEADER => array(
+        "Content-Type: application/json",
+        "Authorization:  giluye1ukeneqeyece7a6ufiwaxe5ici3a5ute5urajucivuyubidu6arage3u8"
+    ),
+));
+        
+$response = curl_exec($curl);
+
+print_r($response);
+
+
+VEND EDUCATION
+
+ <?php
+
+$curl = curl_init();
+    
+$body = json_encode(["productid" => "waec"]);
+
+curl_setopt_array($curl, array(
+CURLOPT_URL => "https://emobilesms.com/api/vendeducation.php",
+CURLOPT_RETURNTRANSFER => true,
+CURLOPT_ENCODING => "",
+CURLOPT_MAXREDIRS => 10,
+CURLOPT_TIMEOUT => 0,
+CURLOPT_FOLLOWLOCATION => true,
+CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+CURLOPT_CUSTOMREQUEST => "POST",
+CURLOPT_POSTFIELDS => $body,
+CURLOPT_HTTPHEADER => array(
+        "Content-Type: application/json",
+        "Authorization:  giluye1ukeneqeyece7a6ufiwaxe5ici3a5ute5urajucivuyubidu6arage3u8"
+    ),
+));
+        
+$response = curl_exec($curl);
+
+print_r($response);
+
+
+
+===++++++++========
+VEND ELECTRICITY 
+
+================
+<?php
+
+$curl = curl_init();
+    
+$body = json_encode(["disco" => "ibedc", "meterNo" => "37132073729", "amount" => 50]);
+
+curl_setopt_array($curl, array(
+CURLOPT_URL => "https://emobilesms.com/api/vendelectricity.php",
+CURLOPT_RETURNTRANSFER => true,
+CURLOPT_ENCODING => "",
+CURLOPT_MAXREDIRS => 10,
+CURLOPT_TIMEOUT => 0,
+CURLOPT_FOLLOWLOCATION => true,
+CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+CURLOPT_CUSTOMREQUEST => "POST",
+CURLOPT_POSTFIELDS => $body,
+CURLOPT_HTTPHEADER => array(
+        "Content-Type: application/json",
+        "Authorization:  giluye1ukeneqeyece7a6ufiwaxe5ici3a5ute5urajucivuyubidu6arage3u8"
+    ),
+));
+        
+$response = curl_exec($curl);
+
+print_r($response);
+
+
+<?php
+
+$curl = curl_init();
+    
+$body = json_encode(["cabletype" => "gotv", "iuc" => "2029159670"]);
+
+curl_setopt_array($curl, array(
+CURLOPT_URL => "https://emobilesms.com/api/verifycabletv.php",
+CURLOPT_RETURNTRANSFER => true,
+CURLOPT_ENCODING => "",
+CURLOPT_MAXREDIRS => 10,
+CURLOPT_TIMEOUT => 0,
+CURLOPT_FOLLOWLOCATION => true,
+CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+CURLOPT_CUSTOMREQUEST => "POST",
+CURLOPT_POSTFIELDS => $body,
+CURLOPT_HTTPHEADER => array(
+        "Content-Type: application/json",
+        "Authorization:  giluye1ukeneqeyece7a6ufiwaxe5ici3a5ute5urajucivuyubidu6arage3u8"
+    ),
+));
+        
+$response = curl_exec($curl);
+
+print_r($response);
+
+
+===++++++++++++++========
+VERIFY ELECTRICITY 
+====++++++++++++++++++=====
+
+<?php
+
+$curl = curl_init();
+    
+$body = json_encode(["disco" => "ibedc", "meterNo" => "37132073729"]);
+
+curl_setopt_array($curl, array(
+CURLOPT_URL => "https://emobilesms.com/api/verifyelectricity.php",
+CURLOPT_RETURNTRANSFER => true,
+CURLOPT_ENCODING => "",
+CURLOPT_MAXREDIRS => 10,
+CURLOPT_TIMEOUT => 0,
+CURLOPT_FOLLOWLOCATION => true,
+CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+CURLOPT_CUSTOMREQUEST => "POST",
+CURLOPT_POSTFIELDS => $body,
+CURLOPT_HTTPHEADER => array(
+        "Content-Type: application/json",
+        "Authorization:  giluye1ukeneqeyece7a6ufiwaxe5ici3a5ute5urajucivuyubidu6arage3u8"
+    ),
+));
+        
+$response = curl_exec($curl);
+
+print_r($response);
